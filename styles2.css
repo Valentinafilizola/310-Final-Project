@@ -1,0 +1,45 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Page Header */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Events List Container */
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+}
+
+/* Event Item Styling */
+li {
+    background-color: #e6e6e6;
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    width: 300px; /* Fixed width for uniformity */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ 
+}

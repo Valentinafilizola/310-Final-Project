@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles2.css') }}">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Results</title>
+</head>
+<body>
+    <h1>Upcoming Events in Seattle</h1>
+    <ul>
+        {% for event in events %}
+            <li>
+                <h3>{{ event.name }}</h3>
+                <p>{{ event.dates.start.localDate }} - {{ event.dates.start.localTime }}</p>
+                <a href="{{ event.url }}" target="_blank">More Info</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Search</a>
+</body>
+</html>
