@@ -41,5 +41,34 @@ li {
     padding: 20px;
     width: 300px; /* Fixed width for uniformity */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
- 
+}
+
+/* Back to Search Button */
+a {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #333333; /* Dark grey button */
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px; /* Rounded corners */
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect for Button */
+a:hover {
+    background-color: #555555; /* Lighter grey on hover */
+    transform: scale(1.05); /* Slightly enlarges */
+}
+
+/* Hotels Section Header */
+h2 {
+    font-size: 1.5rem;
+    margin: 30px 0 10px;
+    color: #000;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
 }
