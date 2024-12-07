@@ -66,19 +66,21 @@ form input:focus {
     border-color: #007aff;
 }
 
-form button {
-    background-color: #007aff;
-    color: #ffffff;
-    font-size: 1rem;
-    padding: 10px;
+/* Submit Button Styling */
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333333; /* Dark grey background */
+    color: #fff; /* White text */
     border: none;
-    border-radius: 5px;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transition */
 }
 
-form button:hover {
-    background-color: #005bb5;
+button[type="submit"]:hover {
+    background-color: #555555; /* Slightly lighter grey */
+    transform: scale(1.05); /* Slight zoom-in effect */
 }
 
 /* Footer */
