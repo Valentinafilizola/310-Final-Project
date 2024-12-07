@@ -18,6 +18,36 @@
             </li>
         {% endfor %}
     </ul>
+     <h2>Hotels</h2>
+    <ul>
+        {% for hotel in hotels %}
+        <li>
+            <h3>{{ hotel.hotel.name }}</h3>
+            <p>Price: {{ hotel.offers[0].price.total }} {{ hotel.offers[0].price.currency }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+    <!-- Example fake hotels -->
+    <ul>
+        <li>
+            <h3>Emerald City Inn</h3>
+            <p>Price: 150 USD</p>
+        </li>
+        <li>
+            <h3>Pine View Hotel</h3>
+            <p>Price: 200 USD</p>
+        </li>
+        <li>
+            <h3>Seattle Luxe Retreat</h3>
+            <p>Price: 300 USD</p>
+        </li>
+        <li>
+            <h3>Rainier Suites</h3>
+            <p>Price: 250 USD</p>
+       
+           
+ 
+    </ul>
     <a href="/">Back to Search</a>
 </body>
 </html>
